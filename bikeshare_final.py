@@ -135,7 +135,7 @@ def station_stats(df):
 
     # display most frequent combination of start station and end station trip
     df["frequent_combo"] = df['Start Station'] + "," + df['End Station']
-#    print(df["frequent_combo"])
+
     frequent_combo = df["frequent_combo"].mode()[0]
     frequent_combo_start, frequent_combo_end = frequent_combo.split(",")
     print("The most frequent combination of starting and ending station is: {} and {}".format(frequent_combo_start, frequent_combo_end))
@@ -180,7 +180,6 @@ def user_stats(df, city):
     # Display counts of user types
     print("\nUser Type counts:")
     print(df["User Type"].value_counts())
-#    print(df["User Type"].value_counts(normalize=True))  
 
     # Display counts of gender
     # Only works for DataFrames with the column "Gender"
@@ -233,10 +232,8 @@ def display_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-#        print("You chose to view {}, {}, and {}.".format(city, month, day))
 
         df = load_data(city, month, day)
-#        print(df)
 
         time_stats(df)
         station_stats(df)

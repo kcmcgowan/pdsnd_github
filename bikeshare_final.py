@@ -26,13 +26,13 @@ def get_filters():
     city = CITY_DATA.get(list(CITY_DATA)[city_choice - 1])     
 
     # get user input for month (all, january, february, ... , june)
-    print("\nWhich of the following months would you like to see:\n")
+    print("\nWhich of the following months would you like to examine:\n")
     # send to make_menu() to generate menu for selection
     month_choice = make_menu(MONTH_DATA) 
     month = MONTH_DATA[month_choice - 1]
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    print("\nWhich of the following days would you like to see:\n")
+    print("\nWhich of the following days would you like to examine:\n")
     # send to make_menu() to generate menu for selection
     day_choice = make_menu(DAY_DATA)  
     day = DAY_DATA[day_choice - 1]

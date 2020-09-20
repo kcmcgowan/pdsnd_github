@@ -188,6 +188,7 @@ def user_stats(df, city):
         print("\nUser Gender counts:")
         print(df["Gender"].value_counts())
     else:
+        # Let user know chosen city did not contain data on gender
         print("\nThe data for you chosen city does not contain data on the gender of users.")  
 
     # Display earliest, most recent, and most common year of birth
@@ -201,6 +202,7 @@ def user_stats(df, city):
         print("The youngest user(s) were born in: {}".format(youngest_users))
         print("The most common birth year is: {}".format(most_common))
     else:
+        # Let user know chosen city did not contain data on birth year
         print("\nThe data for you chosen city does not contain data on the birth year of users.") 
 
     print("\nThis took %s seconds." % (time.time() - start_time))

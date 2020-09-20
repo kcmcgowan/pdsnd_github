@@ -5,7 +5,7 @@
 Udacity Programming for Data Science - Explore US Bikeshare Data Project
 
 ### Description
-Uses Python to explore data from one bike share vendor for three major US cities.  Imports the data and computes descriptive statistics.
+Uses Python to explore a 6-month sub-set of data from a bike share vendor for three major US cities.  Imports the data and computes descriptive statistics.
 
 ### Files used
 Primary: bikeshare_final.py
